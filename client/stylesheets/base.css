@@ -1,0 +1,12 @@
+/* Elements */
+a {
+  cursor: pointer;
+}
+
+/* forms */
+.control-label {
+  font-size: 16px;
+}
+.control-label.control-label-sm {
+  font-size: 13px;
+}

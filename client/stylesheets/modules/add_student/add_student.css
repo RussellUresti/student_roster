@@ -1,0 +1,11 @@
+.add-student form {
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .modal.bs-modal-lg, .modal-lg {
+    width: 640px;
+  }
+  .modal.bs-modal-lg {
+    margin-left: -320px;
+  }
+}

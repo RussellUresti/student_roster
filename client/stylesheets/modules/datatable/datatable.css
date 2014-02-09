@@ -1,0 +1,17 @@
+/* Data Table */
+.table .sorting-caret {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  vertical-align: baseline;
+  margin-bottom: -2px;
+  background: url(/images/sort_both.png) no-repeat center;
+}
+.table .sorting-desc .sorting-caret {
+  background-image: url(/images/sort_desc.png);
+  background-position: center -6px;
+}
+.table .sorting-asc .sorting-caret {
+  background-image: url(/images/sort_asc.png);
+  background-position: center 2px;
+}

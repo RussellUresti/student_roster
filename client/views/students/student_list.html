@@ -1,0 +1,23 @@
+<template name="studentList">
+  <table id="student-table" class="students table table-striped sortable">
+    <thead>
+      <tr>
+        <th data-name="lastName" class="sorting">Name <i class="sorting-caret"></i></th>
+        <th>Term</th>
+        <th>Grade</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each students}}
+      <tr>
+        {{> studentListItem}}
+      </tr>
+      {{else}}
+      <tr>
+        <td colspan="4">No students exist in this roster.</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</template>

@@ -1,0 +1,54 @@
+<template name="addStudent">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h4 class="modal-title" id="add-student-label">Add Student</h4>
+  </div>
+  <form class="main">
+    <div class="modal-body">
+      <div class="control-group">
+        <label class="control-label" for="name">Name</label>
+        <input required type="text" class="form-control input-block-level" id="name" name="name" placeholder="First &amp; Last Name" />
+        <p class="help-block"></p>
+      </div>
+      <div class="control-group">
+        <label class="control-label">Term</label>
+        <div class="row-fluid">
+          <div class="span6 form-inline">
+            <label class="control-label control-label-sm" for="termStartDate">Start Date: </label>
+            <input required type="text" pattern="(0[1-9]|1[012])[- \/.](0[1-9]|[12][0-9]|3[01])[- \/.](19|20)\d\d" class="form-control" id="termStarttext" name="termStartDate" placeholder="MM/DD/YYYY" />
+            <p class="help-block"></p>
+          </div>
+          <div class="span6 form-inline">
+            <div class="pull-right">
+              <label class="control-label control-label-sm" for="termEndDate">End Date: </label>
+              <input required type="text" pattern="(0[1-9]|1[012])[- \/.](0[1-9]|[12][0-9]|3[01])[- \/.](19|20)\d\d" class="form-control" id="termEndDate" name="termEndDate" placeholder="MM/DD/YYYY" />
+              <p class="help-block"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label" for="grade">Grade</label>
+        <select required class="form-control" id="grade" name="grade">
+          <option value="K">K</option>
+          <option value="1st">1st</option>
+          <option value="2nd">2nd</option>
+          <option value="3rd">3rd</option>
+          <option value="4th">4th</option>
+          <option value="5th">5th</option>
+          <option value="6th">6th</option>
+          <option value="7th">7th</option>
+          <option value="8th">8th</option>
+          <option value="9th">9th</option>
+          <option value="10th">10th</option>
+          <option value="11th">11th</option>
+          <option value="12th">12th</option>
+        </select>
+        <p class="help-block"></p>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <input type="submit" value="Add" class="btn btn-primary" />
+    </div>
+  </form>
+</template>
